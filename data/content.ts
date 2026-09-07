@@ -33,14 +33,6 @@ export const process = [
 export const resultCases = [
   {
     id: "01",
-    before: "/images/results/case-01-before.webp",
-    after: "/images/results/case-01-after.webp",
-    condition: "Mụn & lỗ chân lông",
-    treatment: null,
-    duration: null,
-  },
-  {
-    id: "02",
     before: "/images/results/case-02-before.webp",
     after: "/images/results/case-02-after.webp",
     condition: "Nám - tàn nhang",
@@ -48,7 +40,7 @@ export const resultCases = [
     duration: null,
   },
   {
-    id: "03",
+    id: "02",
     before: "/images/results/case-03-before.webp",
     after: "/images/results/case-03-after.webp",
     condition: "Da nhạy cảm, viêm đỏ",
@@ -56,10 +48,18 @@ export const resultCases = [
     duration: null,
   },
   {
-    id: "04",
+    id: "03",
     before: "/images/results/case-04-before.webp",
     after: "/images/results/case-04-after.webp",
     condition: "Nám - sạm da",
+    treatment: null,
+    duration: null,
+  },
+  {
+    id: "04",
+    before: "/images/results/case-01-before.webp",
+    after: "/images/results/case-01-after.webp",
+    condition: "Mụn & lỗ chân lông",
     treatment: null,
     duration: null,
   },
@@ -87,7 +87,7 @@ export const testimonials = [
     image: null,
   },
   {
-    quote: "Da của em sau 8 tháng điều trị theo phác đồ của chị Hồ Thụy, giờ đã đẹp và khoẻ hơn nhiều.",
+    quote: "Da của em sau 8 tháng điều trị theo phác đồ của chị Hồ Thủy, giờ đã đẹp và khoẻ hơn nhiều.",
     source: "Chị Lý",
     image: null,
   },

@@ -20,7 +20,7 @@ type Testimonial = {
 
 Current confirmed information:
 - Brand: Lake beauty
-- Specialist: Hồ Thụy
+- Specialist: Hồ Thủy
 - Address: 16 Nguyễn Đình Chiểu, Buôn Hồ, Đắk Lắk
 - Booking channel: Facebook Messenger at `facebook.com/lakebeauty47`
 - Services (confirmed from real photos and customer messages): Chăm sóc da, điều trị mụn — sẹo rỗ — sẹo lồi — nám/tàn nhang — da tổn thương do corticoid, triệt lông, tư vấn da riêng

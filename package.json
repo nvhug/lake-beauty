@@ -6,17 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "serve -s out",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "node --test scripts/**/*.test.mjs"
   },
   "dependencies": {
-    "@react-three/drei": "^10.0.0",
-    "@react-three/fiber": "^9.0.0",
     "framer-motion": "^12.0.0",
     "lenis": "^1.1.20",
     "next": "^16.0.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "three": "^0.180.0"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

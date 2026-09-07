@@ -28,6 +28,7 @@ const localBusinessSchema = {
     addressRegion: "Đắk Lắk",
     addressCountry: "VN",
   },
+  telephone: "+84364859599",
   sameAs: [brand.messengerUrl],
 };
 
@@ -42,7 +43,7 @@ export default function Home() {
 
         <section className="proof section" aria-label="Những giá trị của Lake beauty">
           <div>
-            <p className="eyebrow light-eyebrow">
+            <p className="eyebrow">
               <span />
               Tin cậy bắt đầu từ sự thật
             </p>
@@ -167,7 +168,7 @@ export default function Home() {
 
         <section className="experience">
           <div className="experience-copy">
-            <p className="eyebrow light-eyebrow">
+            <p className="eyebrow">
               <span />
               04 / Không gian thực tế
             </p>
@@ -177,7 +178,7 @@ export default function Home() {
               <em>để thở chậm.</em>
             </h2>
             <p>Ảnh chụp trực tiếp tại phòng chăm sóc của Lake beauty — không dùng ảnh minh hoạ hay ảnh stock.</p>
-            <a className="text-link light-link" href={brand.messengerUrl} target="_blank" rel="noreferrer">
+            <a className="text-link" href={brand.messengerUrl} target="_blank" rel="noreferrer">
               Xem Facebook <span aria-hidden="true">↗</span>
             </a>
           </div>
@@ -249,7 +250,7 @@ export default function Home() {
 
         <section className="final-cta" id="visit">
           <div>
-            <p className="eyebrow light-eyebrow">
+            <p className="eyebrow">
               <span />
               Ready when you are
             </p>
@@ -259,7 +260,7 @@ export default function Home() {
               <em>làn da tốt hơn?</em>
             </h2>
             <p>Đặt lịch tư vấn để trao đổi về tình trạng da và lựa chọn phù hợp.</p>
-            <a className="button button-coral" href={brand.messengerUrl} target="_blank" rel="noreferrer">
+            <a className="button button-dark" href={brand.messengerUrl} target="_blank" rel="noreferrer">
               Đặt lịch tư vấn <span aria-hidden="true">↗</span>
             </a>
           </div>
@@ -267,6 +268,9 @@ export default function Home() {
             <span>Lake beauty</span>
             <strong>Buôn Hồ</strong>
             <small>{brand.address}</small>
+            <a className="final-cta-phone" href={`tel:${brand.phone.replace(/\s+/g, "")}`}>
+              {brand.phone}
+            </a>
           </aside>
         </section>
       </main>
@@ -279,9 +283,12 @@ export default function Home() {
           </span>
         </a>
         <p>{brand.description}</p>
-        <a href={brand.messengerUrl} target="_blank" rel="noreferrer">
-          Facebook ↗
-        </a>
+        <div className="footer-links">
+          <a href={brand.messengerUrl} target="_blank" rel="noreferrer">
+            Facebook ↗
+          </a>
+          <a href={`tel:${brand.phone.replace(/\s+/g, "")}`}>{brand.phone}</a>
+        </div>
       </footer>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />

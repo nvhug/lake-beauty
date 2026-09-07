@@ -1,13 +1,7 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { motion, useReducedMotion } from "framer-motion";
 import { brand } from "@/data/brand";
-
-const HeroScene = dynamic(() => import("./HeroScene").then((module) => module.HeroScene), {
-  ssr: false,
-  loading: () => <div className="scene-fallback" />,
-});
 
 const line = {
   hidden: { opacity: 0, y: 26 },
@@ -29,9 +23,6 @@ export function Hero() {
 
   return (
     <section className="hero" id="top">
-      <div className="hero-stage" aria-hidden="true">
-        <HeroScene />
-      </div>
       <div className="hero-veil" aria-hidden="true" />
 
       <div className="hero-inner">
@@ -54,10 +45,10 @@ export function Hero() {
         </motion.p>
 
         <motion.div className="hero-actions" {...animate(4)}>
-          <a className="button button-coral" href={brand.messengerUrl} target="_blank" rel="noreferrer">
+          <a className="button button-dark" href={brand.messengerUrl} target="_blank" rel="noreferrer">
             Đặt lịch tư vấn <span aria-hidden="true">↗</span>
           </a>
-          <a className="text-link light-link" href="#ket-qua">
+          <a className="text-link" href="#ket-qua">
             Xem kết quả <span aria-hidden="true">↓</span>
           </a>
         </motion.div>

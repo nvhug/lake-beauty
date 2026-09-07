@@ -18,3 +18,11 @@ yarn-error.log*
 
 # local env files
 .env*.local
+
+# rocket-core
+.devcore/state.json
+.devcore/state.json.*
+.devcore/bin/__pycache__/
+.claude/settings.local.json
+.claude/settings.json.bak.*
+.claude/skills/gstack/
