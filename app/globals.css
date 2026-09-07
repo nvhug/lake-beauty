@@ -599,7 +599,7 @@ p {
 
 .result-after {
   z-index: 2;
-  clip-path: inset(0 calc(100% - var(--position)) 0 0);
+  clip-path: inset(0 0 0 var(--position));
 }
 
 .result-after > span {
